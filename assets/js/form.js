@@ -1,8 +1,7 @@
 // Home page JS
 
 // Setting global variable
-const submit = document.querySelector("#submit");
-const username = document.getElementById("userName");
+const username = document.querySelector("#userName");
 const title = document.querySelector("#title");
 const content = document.querySelector("#content");
 

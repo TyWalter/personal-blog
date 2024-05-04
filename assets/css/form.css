@@ -1,19 +1,8 @@
 /* Home page CSS */
 
-/* Applying font-family and background to everything */
+/* Applying font-family */
 * {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-/* Circle image and overlaying text */
-aside {
-  display: flex;
-  position: relative;
-  background-image: url("../images/yellowcircle.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 650px 650px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -63,7 +52,79 @@ input {
   }
 }
 
-#submit {
+/* Dark mode changes */
+
+/* Dark image and h1 text */
+.dark-form-image {
+  display: flex;
+  position: relative;
+  background-image: url("../images/yellowcircledark.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px 650px;
+  margin: 0 auto;
+}
+
+.dark-form-h1 {
+  color: black;
+  text-shadow: 2px 2px white;
+}
+
+/* Dark middle border */
+.dark-form-middle {
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  margin: 0 auto;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 13px;
+  height: 90vh;
+}
+
+/* Dark submit button */
+.dark-form-submit{
+  background-color: white;
+  color: black;
+  font-size: 1.4rem;
+  height: 5vh;
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+  &:active {
+    font-size: 1.2rem;
+    width: 98%;
+    height: 4.5vh;
+    margin: .25vh 0;
+  }
+}
+
+/* Light mode changes */
+
+/* Light image */
+.light-form-image {
+  display: flex;
+  position: relative;
+  background-image: url("../images/yellowcirclelight.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px 650px;
+  margin: 0 auto;
+}
+
+/* Light middle border */
+.light-form-middle {
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  margin: 0 auto;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 13px;
+  height: 90vh;
+}
+
+/* Light submit button */
+.light-form-submit {
   background-color: black;
   color: white;
   font-size: 1.4rem;
@@ -72,15 +133,10 @@ input {
     border: 0;
     outline: 0;
   }
-}
-
-/* Double Border in middle of screen */
-.col-2 {
-  border-left: 4px solid black;
-  border-right: 4px solid black;
-  margin: 0 auto;
-  padding-left: 2px;
-  padding-right: 2px;
-  width: 13px;
-  height: 90vh;
+  &:active {
+    font-size: 1.2rem;
+    width: 98%;
+    height: 4.5vh;
+    margin: .25vh 0;
+  }
 }
