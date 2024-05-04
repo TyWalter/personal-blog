@@ -1,3 +1,86 @@
+/* Home page CSS */
+
+/* Applying font-family and background to everything */
 * {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Circle image and overlaying text */
+aside {
+  display: flex;
+  position: relative;
+  background-image: url("../images/yellowcircle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px 650px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: absolute;
+  margin: 0 auto;
+  background: transparent;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/* Form input */
+h2 {
+  font-size: 3rem;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+input {
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 10px;
+  border: 1px solid black;
+  height: 4vh;
+  &:focus {
+    border: 0;
+    outline: 2px solid cornflowerblue;
+    border-radius: 6px;
+  }
+}
+
+#content {
+  height: 10vh;
+  align-content: top;
+  width: 100%;
+  border-radius: 6px;
+  padding-left: 10px;
+  border: 1px solid black;
+  &:focus {
+    border: 0;
+    outline: 2px solid cornflowerblue;
+    border-radius: 6px;
+  }
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  height: 5vh;
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+/* Double Border in middle of screen */
+.col-2 {
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  margin: 0 auto;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 13px;
+  height: 90vh;
 }

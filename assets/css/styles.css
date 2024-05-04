@@ -1,96 +1,22 @@
+/* Shared CSS Styles for home page and blog page */
+/* Default is light mode */
+
+/* Applying font-family and background to everything */
 * {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: white;
 }
 
-nav {
+/* Dark mode / light mode icon on home page */
+div.text-end {
   height: 10vh;
-  text-align: end;
   align-content: center;
 }
 
+/* Double border top */
 main {
   border-top-style: double;
   border-top-width: 10px;
 }
 
-/* #moon {
-  display: none;
-} */
-
-input {
-  border-radius: 6px;
-  width: 100%;
-  padding-left: 10px;
-  border: 1px solid black;
-  height: 4vh;
-  &:focus {
-    border: 0;
-    outline: 2px solid cornflowerblue;
-    border-radius: 6px;
-  }
-}
-
-#content {
-  height: 10vh;
-  align-content: top;
-  width: 100%;
-  border-radius: 6px;
-  padding-left: 10px;
-  border: 1px solid black;
-  &:focus {
-    border: 0;
-    outline: 2px solid cornflowerblue;
-    border-radius: 6px;
-  }
-}
-
-#submit {
-  background-color: black;
-  color: white;
-  font-size: 1.4rem;
-  height: 5vh;
-  &:focus {
-    border: 0;
-    outline: 0;
-  }
-}
-
-label {
-  display: flex;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-}
-
-.col-2 {
-  border-left: 4px solid black;
-  border-right: 4px solid black;
-  margin: 0 auto;
-  padding-left: 2px;
-  padding-right: 2px;
-  width: 13px;
-  height: 90vh;
-}
-
-aside {
-  display: flex;
-  position: relative;
-  background-image: url("../images/yellowcircle.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 650px 650px;
-  margin: 0 auto;
-}
-
-h1 {
-  display: absolute;
-  margin: 0 auto;
-  background: transparent;
-  font-size: 4rem;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-h2 {
-  font-size: 3rem;
-}
+/* Dark mode changes */
