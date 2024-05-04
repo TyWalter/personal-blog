@@ -15,6 +15,30 @@
   </head>
 
   <body>
+    <nav>
+      <img id="sun" src="./assets/images/sun-symbol.svg" alt="sun icon" height="50px" width="50px" style="cursor: pointer; cursor: hand; display: inline"/>
+      <img id="moon" src="./assets/images/waxing-crescent-moon.svg" alt="moon icon" height="50px" width="50px" style="cursor: pointer; cursor: hand; display: none"/>
+    </nav>
+    <main class="container-fluid text-center">
+      <div class="row justify-content-end">
+        <aside class="col-5 align-items-center">
+          <h1>My First Blog</h1>
+        </aside>
+        <div class="col-2"></div>
+        <div class="col-6 align-content-center">
+          <h2>What's on your mind?</h2>
+          <form action="./blog.html" target="_self">
+            <label for="userName">Username</label>
+            <input type="text" id="userName" name="userName" /><br><br>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" /><br><br>
+            <label for="content" class="text-wrap">Content</label>
+            <textarea type="text" id="content" name="content"></textarea><br><br>
+            <input type="submit" value="Submit" id="submit"/>
+          </form>
+        </div>
+      </div>
+    </main>
   
 
     <!-- jquery script tag -->
