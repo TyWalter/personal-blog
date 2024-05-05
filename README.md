@@ -1,8 +1,8 @@
 # Personal Blog
-This is a homework assignment where I had to use express for routing and make a simple note taker page that updates a db.json with newly inputted data and can user express to display that data.
+This is a homework assignment where I had to use local storage to enter blog information on a home page and display that information on a second page.
 
 ## Description
-This note taker page is meant to jot down a note with a title and once submitted, displays it on the left sidebar where it can be viewed at any time. If you wish to delete a note, that is also possible and is done once you are viewing a note. You can also clear the entries of the form with a clear button if you don't wish to save the note.
+This application can be used to create new blogs and easily view them. To create a new blog, you just need to fill out all the input fields and once you hit submit, you'll be taken to a second page where you can view all past entries. There is also a toggleable light/dark mode on both pages that will remember the last chosen mode.
 
 ## Visuals
 * ![Here is a screenshot](./assets/images/lighthome.JPG) 
@@ -13,10 +13,10 @@ This note taker page is meant to jot down a note with a title and once submitted
 Here are screenshots of the deployed application.
 
 ## Usage
-This is intended to take simple notes and easily track/delete them from a webpage. This is also for grading purposes.
+This is intended to enter blog posts on a landing page and display that information along with previous entries on a second page. This is also for grading purposes.
 
 ## Acknowledgments
-Thank you to [express](https://www.npmjs.com/package/express) and [UUID](https://www.npmjs.com/package/uuid) for allowing me to use their packages.
+Thank you to [express](https://www.icons8.com) for allowing me to download and use svg icon images.
 
 ## Support
 If you have any issues with this repo, shoot me an email at walterty89@gmail.com. 
