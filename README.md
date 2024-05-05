@@ -16,7 +16,7 @@ Here are screenshots of the deployed application.
 This is intended to enter blog posts on a landing page and display that information along with previous entries on a second page. This is also for grading purposes.
 
 ## Acknowledgments
-Thank you to [express](https://www.icons8.com) for allowing me to download and use svg icon images.
+Thank you to [Icons8](https://www.icons8.com) for allowing me to download and use svg icon images.
 
 ## Support
 If you have any issues with this repo, shoot me an email at walterty89@gmail.com. 
