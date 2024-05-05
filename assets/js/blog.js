@@ -3,7 +3,6 @@
 // Parse information from local storage
 function readBlogs(){
   const parsed = JSON.parse(localStorage.getItem("blog"));
-  console.log(parsed)
   displayBlog(parsed);
 };
 
@@ -18,7 +17,7 @@ function displayBlog(parsed){
     const userName = document.createElement("h3");
     title.textContent = num.title;
     content.textContent = num.content;
-    userName.textContent = `Posted by: ${num.userName}`
+    userName.textContent = `Posted by: ${num.username}`
     card.appendChild(title);
     card.appendChild(line);
     card.appendChild(content);
