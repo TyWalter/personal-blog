@@ -1,24 +1,40 @@
 /* Blog page Css */
 
-/* Applying font-family */
-* {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-/* Aligning nav bar */
+/* -----Aligning nav bar----- */
 nav {
   align-items: center;
   position: relative;
 }
 
-/* Main styling */
+/* -----Main styling----- */
 main {
-  height: 75vh;
+  min-height: 75vh;
   border-bottom-style: double;
   border-bottom-width: 10px;
 }
 
-/* Footer styling */
+#card div{
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: .5rem 0 .5rem 1.5rem;
+}
+
+h2 {
+  font-size: 32px;
+  border-bottom: 2px solid;
+  margin-right: 25px;
+}
+
+p {
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  opacity: 40%;
+}
+
+/* -----Footer styling----- */
 footer {
   text-align: center;
   display: flex;
@@ -29,15 +45,18 @@ footer {
 .links {
   text-align: left;
   margin-left: 25px;
+  font-weight: bold;
 }
 
 a {
   font-style: italic;
   text-decoration: none;
+  font-weight: normal;
 }
 
 .email {
   font-style: italic;
+  font-weight: normal;
 }
 
 /* Setting up heart icon */
@@ -48,7 +67,7 @@ a {
 
 /* -----Dark mode changes----- */
 
-/* dark h1 */
+/* Dark h1 */
 .dark-blog-h1 {
   position: absolute;
   align-content: center;
@@ -57,7 +76,7 @@ a {
   font-weight: bold;
 }
 
-/* dark back button */
+/* Dark back button */
 .dark-blog-back {
   font-size: 20px;
   width: 100px;
@@ -70,6 +89,12 @@ a {
   color: white;
 }
 
+/* Dark card */
+.dark-blog-card div {
+  border: 2px solid white;
+}
+
+/* Dark a tag */
 .dark-blog-a {
   color: white;
 }
@@ -96,6 +121,12 @@ a {
   right: 75px;
 }
 
+/* Light card */
+.light-blog-card div {
+  border: 2px solid black;
+}
+
+/* Light a tag */
 .light-blog-a {
   color: black;
 }

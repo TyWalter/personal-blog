@@ -1,20 +1,6 @@
 /* Home page CSS */
 
-/* Applying font-family */
-* {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-h1 {
-  display: absolute;
-  margin: 0 auto;
-  background: transparent;
-  font-size: 4rem;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-/* Form input */
+/* -----Form input----- */
 h2 {
   font-size: 3rem;
 }
@@ -66,6 +52,10 @@ input {
 }
 
 .dark-form-h1 {
+  display: absolute;
+  margin: 0 auto;
+  background: transparent;
+  font-size: 4rem;
   color: black;
   text-shadow: 2px 2px white;
 }
@@ -101,7 +91,7 @@ input {
 
 /* -----Light mode changes----- */
 
-/* Light image */
+/* Light image and h1 text */
 .light-form-image {
   display: flex;
   position: relative;
@@ -110,6 +100,15 @@ input {
   background-position: center;
   background-size: 650px 650px;
   margin: 0 auto;
+}
+
+.light-form-h1 {
+  display: absolute;
+  margin: 0 auto;
+  background: transparent;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 /* Light middle border */

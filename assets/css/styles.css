@@ -1,31 +1,32 @@
 /* Shared CSS Styles for home page and blog page */
 /* Default is light mode */
 
-/* Applying font-family */
+/* -----Applying global font-family----- */
 * {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: .75px;
 }
 
-/* Dark mode / light mode icon on home page */
+/* -----Dark mode / light mode icon on home page----- */
 nav {
   height: 10vh;
   align-content: center;
   margin-right: 25px;
 }
 
-/* Double border top */
+/* -----Double border top----- */
 main {
   border-top-style: double;
   border-top-width: 10px;
 }
 
-/* Dark mode changes */
+/* -----Dark mode changes----- */
 .dark-mode {
   background: rgb(29, 28, 28);
   color: white;
 }
 
-/* Light mode changes */
+/* -----Light mode changes----- */
 .light-mode {
   background: white;
   color: black;

@@ -1,6 +1,6 @@
 // Shared JS for home page and blog page
 
-// Setting global variable
+// Setting global variables
 const moon = document.querySelector("#moon");
 const sun = document.querySelector("#sun");
 const body = document.body;
@@ -9,10 +9,15 @@ const h1 = document.querySelector("h1");
 const submit = document.querySelector("#submit");
 const middle = document.querySelector("#middle");
 const path = document.head.children[6].innerText;
+const aEl = document.querySelectorAll("a");
+const button = document.querySelector("button");
+const divCard = document.querySelector("#card");
+const username = document.querySelector("#userName");
+const title = document.querySelector("#title");
+const content = document.querySelector("#content");
 
-// Grabbing icon mode from local storage
+// Grabbing icon mode from local storage and running certain functions based on what page we're on
 function getIcon(){
-  console.log(path)
   const mode = localStorage.getItem("icon");
   if(mode === "moon" && path === "Blog Entry"){
     displayMoon();
@@ -63,16 +68,14 @@ function displayDarkHome(){
 
 // Change display to dark mode blog page
 function displayDarkBlog(){
+  aEl.forEach(a => {
+    a.classList.remove("light-blog-a");
+    a.classList.add("dark-blog-a");
+  })
   body.classList.remove("light-mode");
   body.classList.add("dark-mode");
-  image.classList.remove("light-form-image");
-  image.classList.add("dark-form-image");
-  h1.classList.remove("light-form-h1");
-  h1.classList.add("dark-form-h1");
-  submit.classList.remove("light-form-submit");
-  submit.classList.add("dark-form-submit");
-  middle.classList.remove("light-form-middle");
-  middle.classList.add("dark-form-middle");
+  divCard.classList.remove("light-blog-card");
+  divCard.classList.add("dark-blog-card");
 };
 
 // Display sun icon for light mode
@@ -97,16 +100,14 @@ function displayLightHome(){
 
 // Change display to light mode blog page
 function displayLightBlog(){
+  aEl.forEach(a => {
+    a.classList.remove("dark-blog-a");
+    a.classList.add("light-blog-a");
+  })
   body.classList.remove("dark-mode");
   body.classList.add("light-mode");
-  image.classList.remove("dark-form-image");
-  image.classList.add("light-form-image");
-  h1.classList.remove("dark-form-h1");
-  h1.classList.add("light-form-h1");
-  submit.classList.remove("dark-form-submit");
-  submit.classList.add("light-form-submit");
-  middle.classList.remove("dark-form-middle");
-  middle.classList.add("light-form-middle");
+  divCard.classList.remove("dark-blog-card");
+  divCard.classList.add("light-blog-card");
 };
 
 // Listening for clicks on icon to switch mode
