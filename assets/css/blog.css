@@ -4,3 +4,98 @@
 * {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+/* Aligning nav bar */
+nav {
+  align-items: center;
+  position: relative;
+}
+
+/* Main styling */
+main {
+  height: 75vh;
+  border-bottom-style: double;
+  border-bottom-width: 10px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.links {
+  text-align: left;
+  margin-left: 25px;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.email {
+  font-style: italic;
+}
+
+/* Setting up heart icon */
+.heart {
+  font-size: 24px;
+  color: red;
+}
+
+/* -----Dark mode changes----- */
+
+/* dark h1 */
+.dark-blog-h1 {
+  position: absolute;
+  align-content: center;
+  font-size: 2.4rem;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+/* dark back button */
+.dark-blog-back {
+  font-size: 20px;
+  width: 100px;
+  border-radius: 6px;
+  display: inline;
+  position: absolute;
+  margin-top: 7px;
+  right: 75px;
+  background: rgb(29, 28, 28);
+  color: white;
+}
+
+.dark-blog-a {
+  color: white;
+}
+
+/* -----Light mode changes----- */
+
+/* Light h1 */
+.light-blog-h1 {
+  position: absolute;
+  align-content: center;
+  font-size: 2.4rem;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+/* Light back button */
+.light-blog-back {
+  font-size: 20px;
+  width: 100px;
+  border-radius: 6px;
+  display: inline;
+  position: absolute;
+  margin-top: 7px;
+  right: 75px;
+}
+
+.light-blog-a {
+  color: black;
+}

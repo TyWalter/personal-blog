@@ -8,17 +8,25 @@ const image = document.querySelector("aside")
 const h1 = document.querySelector("h1");
 const submit = document.querySelector("#submit");
 const middle = document.querySelector("#middle");
+const path = document.head.children[6].innerText;
 
 // Grabbing icon mode from local storage
 function getIcon(){
+  console.log(path)
   const mode = localStorage.getItem("icon");
-  if(mode === "moon"){
+  if(mode === "moon" && path === "Blog Entry"){
     displayMoon();
-    displayDark();
-  } else if(mode === "sun"){
+    displayDarkHome();
+  } else if(mode === "sun" && path === "Blog Entry"){
     displaySun();
-    displayLight();
-  }
+    displayLightHome();
+  } else if(mode === "moon" && path === "Blogs"){
+    displayMoon();
+    displayDarkBlog();
+  } else if(mode === "sun" && path === "Blogs"){
+    displaySun();
+    displayLightBlog();
+  }  
 };
 
 // Saving icon mode to local storage
@@ -39,19 +47,32 @@ function displayMoon(){
   moon.style.display = "inline";
 };
 
-// Change display to dark mode
-function displayDark(){
-  console.log("dark")
-    body.classList.remove("light-mode");
-    body.classList.add("dark-mode");
-    image.classList.remove("light-form-image");
-    image.classList.add("dark-form-image");
-    h1.classList.remove("light-form-h1");
-    h1.classList.add("dark-form-h1");
-    submit.classList.remove("light-form-submit");
-    submit.classList.add("dark-form-submit");
-    middle.classList.remove("light-form-middle");
-    middle.classList.add("dark-form-middle");
+// Change display to dark mode home page
+function displayDarkHome(){
+  body.classList.remove("light-mode");
+  body.classList.add("dark-mode");
+  image.classList.remove("light-form-image");
+  image.classList.add("dark-form-image");
+  h1.classList.remove("light-form-h1");
+  h1.classList.add("dark-form-h1");
+  submit.classList.remove("light-form-submit");
+  submit.classList.add("dark-form-submit");
+  middle.classList.remove("light-form-middle");
+  middle.classList.add("dark-form-middle");
+};
+
+// Change display to dark mode blog page
+function displayDarkBlog(){
+  body.classList.remove("light-mode");
+  body.classList.add("dark-mode");
+  image.classList.remove("light-form-image");
+  image.classList.add("dark-form-image");
+  h1.classList.remove("light-form-h1");
+  h1.classList.add("dark-form-h1");
+  submit.classList.remove("light-form-submit");
+  submit.classList.add("dark-form-submit");
+  middle.classList.remove("light-form-middle");
+  middle.classList.add("dark-form-middle");
 };
 
 // Display sun icon for light mode
@@ -60,9 +81,22 @@ function displaySun(){
   moon.style.display = "none";
 };
 
-// Change display to light mode
-function displayLight(){
-  console.log("light")
+// Change display to light mode home page
+function displayLightHome(){
+  body.classList.remove("dark-mode");
+  body.classList.add("light-mode");
+  image.classList.remove("dark-form-image");
+  image.classList.add("light-form-image");
+  h1.classList.remove("dark-form-h1");
+  h1.classList.add("light-form-h1");
+  submit.classList.remove("dark-form-submit");
+  submit.classList.add("light-form-submit");
+  middle.classList.remove("dark-form-middle");
+  middle.classList.add("light-form-middle");
+};
+
+// Change display to light mode blog page
+function displayLightBlog(){
   body.classList.remove("dark-mode");
   body.classList.add("light-mode");
   image.classList.remove("dark-form-image");

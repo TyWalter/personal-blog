@@ -7,9 +7,10 @@
 }
 
 /* Dark mode / light mode icon on home page */
-div.text-end {
+nav {
   height: 10vh;
   align-content: center;
+  margin-right: 25px;
 }
 
 /* Double border top */

@@ -52,7 +52,7 @@ input {
   }
 }
 
-/* Dark mode changes */
+/* -----Dark mode changes----- */
 
 /* Dark image and h1 text */
 .dark-form-image {
@@ -78,7 +78,7 @@ input {
   padding-left: 2px;
   padding-right: 2px;
   width: 13px;
-  height: 90vh;
+  height: 88.9vh;
 }
 
 /* Dark submit button */
@@ -99,7 +99,7 @@ input {
   }
 }
 
-/* Light mode changes */
+/* -----Light mode changes----- */
 
 /* Light image */
 .light-form-image {
@@ -120,7 +120,7 @@ input {
   padding-left: 2px;
   padding-right: 2px;
   width: 13px;
-  height: 90vh;
+  height: 88.9vh;
 }
 
 /* Light submit button */
