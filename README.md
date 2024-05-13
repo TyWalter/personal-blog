@@ -3,6 +3,7 @@ This is a homework assignment where I had to use local storage to enter blog inf
 
 ## Description
 This application can be used to create new blogs and easily view them. To create a new blog, you just need to fill out all the input fields and once you hit submit, you'll be taken to a second page where you can view all past entries. There is also a toggleable light/dark mode on both pages that will remember the last chosen mode.
+[Here is a link to the deployed application](https://tywalter.github.io/personal-blog/)
 
 ## Visuals
 * ![Here is a screenshot](./assets/images/lighthome.JPG) 
